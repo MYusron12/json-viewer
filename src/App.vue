@@ -17,9 +17,9 @@
           <button @click="formatJson" class="btn btn-primary">Format JSON</button>
         </div>
         <div class="col-lg-6">
-          <div class="mb-3">
+          <div class="mb-3" style="overflow-x: auto;">
             <label for="outputJson" class="form-label">Formatted JSON</label>
-            <textarea :value="formattedJson" class="form-control h-100" id="outputJson" rows="40" readonly></textarea>
+            <pre>{{ formattedJson }}</pre>
           </div>
         </div>
       </div>
@@ -48,3 +48,7 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+/* Styling specific to this component */
+</style>
